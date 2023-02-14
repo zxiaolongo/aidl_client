@@ -3,7 +3,7 @@ package com.example.myaidl.bean
 import android.os.Parcel
 import android.os.Parcelable
 
-class Book (var name:String?):Parcelable {
+data class Book (var name:String?):Parcelable {
     constructor(parcel: Parcel) : this(parcel.readString()) {
     }
 
